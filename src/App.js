@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>You clicked {count} times psych</p>
+        <p>You clicked {count} times</p>
         <button onClick={() => setCount(count + 1)}>Click Me</button>
         <a
           className="App-link"
