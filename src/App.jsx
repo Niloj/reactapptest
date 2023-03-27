@@ -8,10 +8,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p>You clicked {count} times</p>
-        <button onClick={() => setCount(count + 1)}>Click Me</button>
-      </header>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
     </div>
   );
 }
