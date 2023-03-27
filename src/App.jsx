@@ -11,14 +11,6 @@ function App() {
       <header className="App-header">
         <p>You clicked {count} times</p>
         <button onClick={() => setCount(count + 1)}>Click Me</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
