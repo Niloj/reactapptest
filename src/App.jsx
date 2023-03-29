@@ -9,29 +9,14 @@ function App() {
   
   return (
     <div className="App">
-      <div className="card-container">
+      <div className="header parallax parallax-0">
+        <h1>Gabriel Jolin</h1>
+      </div>
+      <div className="card-container section">
         <Card title="title 1" img={Soccer}> 
           <p>this is card 1</p>
         </Card>
         <Card title="title 2" img={imageSrc}> 
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
-          <p>this is card 2</p>
           <p>this is card 2</p>
           <p>this is card 2</p>
           <p>this is card 2</p>
@@ -44,7 +29,15 @@ function App() {
         </Card>
         <Card title="title 4" img={imageSrc}> 
           <p>this is card 4</p>
+          <p>this is card 4</p>
+          <p>this is card 4</p>
+          <p>this is card 4</p>
+          <p>this is card 4</p>
+          <p>this is card 4</p>
         </Card>
+      </div>
+      <div className="parallax parallax-1 section">
+        Section 3
       </div>
     </div>
   );

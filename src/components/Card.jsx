@@ -3,7 +3,7 @@ import './card.scss';
 
 const Card = (props) => {
   const { img, title, children } = props;
-  
+
   return(
     <div className="card">
       <div className="image-container">

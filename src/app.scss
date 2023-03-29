@@ -1,9 +1,39 @@
+//sections
+.section {
+  height: 100vh;
+}
+
+//header
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, sans-serif;
+  font-size: 5em;
+  min-height: 500px;
+}
+
+//parallax
+.parallax {
+  &-0{
+    background-image: url("https://niloj.github.io/Content/photos/BackDrops/FallLeavesDark.jpg");
+  }
+  &-1{
+    background-image: url("https://github.com/Niloj/niloj.github.io/blob/master/Content/photos/BackDrops/tractor.jpg?raw=true");
+  }
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 //resets
 html {
   box-sizing: border-box;
   background-color: #282c34;
   color: white;
-  font-size: 16px;
 }
 
 *, *:before, *:after {
