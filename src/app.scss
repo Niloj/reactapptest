@@ -1,7 +1,89 @@
 //sections
 .section {
   height: 100vh;
+  position: relative;
+  
+  // @media only screen and (max-width: 1250px) {
+  //   font-size: 2rem;
+  // }
+
+  .section-content {
+    display: flex;
+    padding: 5rem;
+    gap: 2rem;
+    flex-direction: column;
+
+    .content-title {
+      display: flex;
+      align-items: center;
+      gap: 2rem; 
+  
+      h1 {
+        font-size: 5rem;
+      }
+      img {
+        height: 7rem;
+      }
+      svg {
+        color: white;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  
+    img {
+      border-radius: 20px;
+    }
+  
+    .content {
+      font-size: 1.6rem;
+    }
+  }
+
+  // arrow stuff 
+  .arrow {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: ui-monospace;
+
+    a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      transform: rotate(90deg);
+      font-size: 3.5rem;
+    }
+  }
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-30px);
+    }
+
+    60% {
+      transform: translateY(-15px);
+    }
+  }
 }
+
+
 
 //header
 .header {
@@ -9,16 +91,47 @@
   justify-content: center;
   align-items: center;
   font-family: Georgia, sans-serif;
-  font-size: 5em;
-  min-height: 500px;
+  text-align: center;
+  align-content: center;
+
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }
+
+//WPF Standardization
+.wpf-standardization {
+  // .wpf-content{
+
+  //   .
+  // }
+  .scontent-titles {
+    text-align: center;
+    // flex:1;
+    font-size: 5em;
+    color: orange;
+  }
+}
+
+
+
+
 
 //parallax
 .parallax {
-  &-0{
+  &-0 {
     background-image: url("https://niloj.github.io/Content/photos/BackDrops/FallLeavesDark.jpg");
   }
-  &-1{
+
+  &-1 {
+    background-image: url("./assets/images/Alice.jpg");
+  }
+
+  &-2 {
     background-image: url("https://github.com/Niloj/niloj.github.io/blob/master/Content/photos/BackDrops/tractor.jpg?raw=true");
   }
 
@@ -36,17 +149,29 @@ html {
   color: white;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
